@@ -34,8 +34,8 @@ Este projeto oferece uma solução simples e eficiente para baixar vídeos do Yo
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/yt-downloader.git
-   cd yt-downloader
+   git clone https://github.com/pkziinn10/YouTube-Video-Downloader.git
+   cd YouTube-Video-Downloader
    ```
 
 2. Crie um ambiente virtual:
@@ -68,7 +68,10 @@ Este projeto oferece uma solução simples e eficiente para baixar vídeos do Yo
 Execute o script passando a URL do vídeo e, opcionalmente, o caminho de destino:
 
 ```bash
-python download_video.py "https://www.youtube.com/watch?v=ABC123" --path "/caminho/para/salvar"
+yt-dlp "https://www.youtube.com/watch?v=ABC123" \
+       -o "/caminho/para/salvar%(title)s.%(ext)s" \
+       -S "res,ext:mp4:m4a" \
+       --recode-video mp4
 ```
 
 Parâmetros:
@@ -96,7 +99,10 @@ Consulte a [documentação oficial do yt-dlp](https://github.com/yt-dlp/yt-dlp#r
 Baixar um vídeo específico:
 
 ```bash
-python download_video.py "https://www.youtube.com/watch?v=dQw4w9WgXcQ" --path "./videos"
+yt-dlp "https://www.youtube.com/watch?v=dQw4w9WgXcQ" \
+       -o "/caminho/para/salvar%(title)s.%(ext)s" \
+       -S "res,ext:mp4:m4a" \
+       --recode-video mp4
 ```
 
 ---
