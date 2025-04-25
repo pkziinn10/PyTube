@@ -101,12 +101,6 @@ python download_video.py "https://www.youtube.com/watch?v=dQw4w9WgXcQ" --path ".
 
 ---
 
-## 📄 Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
----
-
 ## 🤝 Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
